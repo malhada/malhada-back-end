@@ -17,7 +17,7 @@ exports.user_create_post = [
   body("password")
     .trim()
     .isLength({ min: 6 })
-    .withMessage("Minimum password length is 6 chracters.")
+    .withMessage("Minimum password length is 6 characters.")
     .escape(),
   body("password_confirm")
     .trim()
